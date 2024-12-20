@@ -1,0 +1,85 @@
+---
+- summary: |
+    Успешное добавление товара в корзину 
+  requirement: |
+    При добавлении товара в корзину из каталога, товар должен отобразится в корзине покупок 
+  prerequisites: |
+    Открыта страница каталога - https://hexlet-products-store.vercel.app
+  test-data: |
+    Название товара - Essence Mascara Lash Princess
+    Описание товара - The Essence Mascara Lash Princess is a popular mascara known for its volumizing and lengthening effects. Achieve dramatic lashes with this long-lasting and cruelty-free formula.
+    Цена - 9.27$
+  steps:
+    - Выбираем нужный товар из каталога 
+    - Нажимаем кнопку «В корзину»
+    - Переходим во вкладку «Корзина»
+  expected-result: |
+    Выбранный товар должен отображатся на странице корзины 
+
+- summary: |
+    Успешный поиск товара по ключевому слову 
+  requirement: |
+    При вводе названия товара в поиске, должен отобразится список товаров по нашему запросу 
+  prerequisites: |
+    Открыта страница каталога - https://hexlet-products-store.vercel.app
+  test-data: |
+    Название товара - Cat Food
+  steps:
+    - В поисковой строке вводим название товара - «Cat Food»
+  expected-result: |
+    Вводимый нами товар по ключевому слову, должен отображатся в списке каталога 
+
+- summary: |
+    Успешный поиск товара по категориям 
+  requirement: |
+    При выборе категории из списка,должен отобразится список товаров по нашему запросу 
+  prerequisites: |
+    Открыта страница каталога - https://hexlet-products-store.vercel.app
+  test-data: |
+    Список категорий 
+    Категория - fragrances
+  steps:
+    - Находясь на странице каталога, кликаем по вкладке - «Category»
+    - Из открывшегося списка выбираем категорию - «fragrances»
+  expected-result: |
+    Должны отобразится товары соответствующие нашей котегории 
+
+- summary: |
+    Успешное удаление товара из корзины 
+  requirement: |
+    Функция удаления должна позволять пользователю удалять добавленные товары из корзины 
+  prerequisites: |
+    Открыта страница корзины - https://hexlet-products-store.vercel.app/cart
+  test-data: |
+    Добавленный в корзину товар под названием - «Calvin Klein CK One»  
+    Колличество товара - 1
+  steps:
+    - Нажимаем кнопку - «Удалить» 
+  expected-result: |
+    Система корректно удаляет выбранный нами товар из корзины 
+
+- summary: |
+    Успешное офрмление заказа 
+  requirement: |
+    Пользователь должен иметь возможность оформить заказ 
+  prerequisites: |
+    Открыта страница корзины с уже добавленным товаром - https://hexlet-products-store.vercel.app/cart
+  test-data: |
+    Товар под названием - «Calvin Klein CK One»
+    Колличество товара - 1 
+  steps:
+    - Нажимаем на кнопку - «Оформить заказ»
+  expected-result: |
+    Пользователю показывается окно с успешным оформлением заказа,названием товара и общей суммой 
+
+  
+
+
+    
+
+  
+
+
+
+
+
